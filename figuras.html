@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./figutas.css">
     <title>Figuras geometricas</title>
 </head>
 <body>
@@ -15,92 +17,125 @@
     </header>
 
     <section>
-        <h2>Calcula el area y perimetro de un cuadrado</h2>
-        <form>
-            <label for="inputCuadrado">
-                Ingrese lado del cuadrado
-            </label>
-            <input type="number" id="inputCuadrado">
-            <button type="button" onclick="calcularAreaCuadrado()">
-                Calcular area
-            </button>
-            <button type="button" onclick="calcularPerimetroCuadrado()">
-                Calcular perímetro
-            </button>
-        </form>
+        <div class="figuras">
+            <h2>Calcula el area y perimetro de un cuadrado</h2>
+            <form>
+                <div class="items">
+                    <label for="inputCuadrado">
+                        Ingrese lado del cuadrado 
+                    </label>
+                    <input type="number" id="inputCuadrado">
+                </div>
+                <div class="buttons">
+                    <button type="button" onclick="calcularAreaCuadrado()">
+                        Calcular area
+                    </button>
+                    <button type="button" onclick="calcularPerimetroCuadrado()">
+                        Calcular perímetro
+                    </button>
+                </div>
+                
+            </form>
+        </div>
+
+        <div class="figuras">
+            <h2>Calcula el area y perimetro de un triangulo</h2>
+            <form>
+                <div class="items">
+                    <label for="inputBase">
+                        Ingrese la base del triangulo
+                    </label>
+                    <input type="number" id="inputBase">
+                </div>
+                <div class="items">
+                    <label for="inputLado1">
+                        Ingrese lado 1 del triangulo
+                    </label>
+                    <input type="number" id="inputLado1">
+                </div>
+
+                <div class="items">
+                    <label for="inputLado2">
+                        Ingrese lado 2 del triangulo
+                    </label>
+                    <input type="number" id="inputLado2">
+                </div>
+
+                <div class="items">
+                    <label for="inputAltura">
+                        Ingrese altura del triangulo
+                    </label>
+                    <input type="number" id="inputAltura">
+                </div>
+                
+                <div class="buttons">
+                    <button type="button" onclick="calcularAreaTriangulo()">
+                        Calcular area
+                    </button>
+                    <button type="button" onclick="calcularPerimetroTriangulo()">
+                        Calcular perímetro
+                    </button>
+                </div>
+ 
+            </form>
+        </div>
+
+        <div class="figuras">
+            <h2>Calcula la altura de un triangulo isosceles</h2>
+            <form>
+                <div class="items">
+                    <label for="inputBase1">
+                        Ingrese base del triangulo
+                    </label>
+                    <input type="number" id="inputBase1">
+                </div>
+                <div class="items">
+                    <label for="inputLado11">
+                        Ingrese lado 1 del triangulo
+                    </label>
+                    <input type="number" id="inputLado11">
+                </div>
+                <div class="items">
+                    
+                </div>
+                <div class="items">
+                    <label for="inputLado21">
+                        Ingrese lado 2 del triangulo
+                    </label>
+                    <input type="number" id="inputLado21">
+                </div>
+                <div class="buttons">
+                    <button type="button" onclick="calcularAlturaTriangulo()">
+                        Calcular altura
+                    </button>
+                </div>
+
+            </form>
+        </div>
+
+        <div class="figuras">
+            <h2>Calcula el area y perimetro de una circunferencia</h2>
+            <form>
+                <div class="items">
+                    <label for="inputCircunferencia">
+                        Ingrese el radio de la circunferencia
+                    </label>
+                    <input type="number" id="inputCircunferencia">
+                </div>
+                <div class="buttons">
+                    <button type="button" onclick="calcularAreaCircunferencia()">
+                        Calcular area
+                    </button>
+                    <button type="button" onclick="calcularPerimetroCircunferencia()">
+                        Calcular perímetro
+                    </button>
+                </div>
+                
+            </form>
+        </div>
+        
     </section>
 
-    <section>
-        <h2>Calcula el area y perimetro de un triangulo</h2>
-        <form>
-            <label for="inputBase">
-                Ingrese base del triangulo
-            </label>
-            <input type="number" id="inputBase">
-
-            <label for="inputLado1">
-                Ingrese lado 1 del triangulo
-            </label>
-            <input type="number" id="inputLado1">
-
-            <label for="inputLado2">
-                Ingrese lado 2 del triangulo
-            </label>
-            <input type="number" id="inputLado2">
-
-            <label for="inputAltura">
-                Ingrese altura del triangulo
-            </label>
-            <input type="number" id="inputAltura">
-
-            <button type="button" onclick="calcularAreaTriangulo()">
-                Calcular area
-            </button>
-            <button type="button" onclick="calcularPerimetroTriangulo()">
-                Calcular perímetro
-            </button>
-        </form>
-    </section>
-
-    <section>
-        <h2>Calcula la altura de un triangulo isosceles</h2>
-        <form>
-            <label for="inputBase1">
-                Ingrese base del triangulo
-            </label>
-            <input type="number" id="inputBase1">
-
-            <label for="inputLado11">
-                Ingrese lado 1 del triangulo
-            </label>
-            <input type="number" id="inputLado11">
-
-            <label for="inputLado21">
-                Ingrese lado 2 del triangulo
-            </label>
-            <input type="number" id="inputLado21">
-
-            <button type="button" onclick="calcularAlturaTriangulo()">
-                Calcular altura
-            </button>
-        </form>
-    </section>
-
-    <section>
-        <h2>Calcula el area y perimetro de una circunferencia</h2>
-        <form>
-            <label for="inputCircunferencia">
-                Ingrese el radio de la circunferencia
-            </label>
-            <input type="number" id="inputCircunferencia">
-            <button type="button" onclick="calcularAreaCircunferencia()">
-                Calcular area
-            </button>
-            <button type="button" onclick="calcularPerimetroCircunferencia()">
-                Calcular perímetro
-            </button>
-        </form>
-    </section>
     <script src="./figuras.js"></script>
 </body>
 </html>

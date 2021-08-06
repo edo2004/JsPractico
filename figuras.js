@@ -113,3 +113,4 @@ function calcularPerimetroCircunferencia() {
     const perimetro = perimetroCirculo(value)
     alert(Math.round(perimetro*100)/100)
 }
+
