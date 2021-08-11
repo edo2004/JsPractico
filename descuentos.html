@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./descuentos.css">
+    <title>Porcentajes y descuentos</title>
+</head>
+<body>
+    <header>
+        <h1>Calcula el descuento de tu producto!</h1>
+    </header>
+
+    <section>
+        <div class="card-cupones">
+            <img src="https://dekoraprint.com/wp-content/uploads/2020/01/cartel-black-friday.png" alt="">
+
+            <form>
+                <div class="input-form">
+                    <div class="input-item">                        
+                        <input type="number" id="inputPrice" required>
+                        <div class="underline"></div>
+                        <label for="inputPrice">Precio de tu producto</label>
+                    </div>
+                </div>
+                
+                <div class="input-form">
+                    <div class="input-item">
+                        <input type="text" id="inputDiscount" required>
+                        <div class="underline"></div>
+                        <label for="inputDiscount">Cupon</label>
+                    </div>
+                </div>
+                
+                <!-- <div class="input-form">
+                    <div class="input-item">
+                        <select name="cupones" id="cuponDiscount">
+                            <option value="0">No tengo</option>
+                            <option value="10">YDOM</option>
+                            <option value="15">EOM</option>
+                            <option value="20">MMO</option>
+                            <option value="25">JORB</option>
+                        </select>
+                        <div class="underline"></div>
+                        <label for="cuponDiscount" id="cupon-descuento">Cupon</label>
+                    </div>
+                </div> -->
+        
+                <button type="button" onclick="PriceDiscount()">
+                    Calcular el precio con descuento
+                </button>
+    
+            </form>
+        </div>
+
+        <div class="card-producto">
+            <div class="card-producto-info">
+                <img src="https://previews.123rf.com/images/avatap/avatap1604/avatap160400529/56115700-descuentos-del-t%C3%ADtulo-black-friday-en-un-fondo-blanco.jpg" alt="Black">
+                <div class="descuento">
+                    <p id="descuentoTot">-$00</p>
+                </div>
+            </div>
+            <div class="card-producto-image">
+                <p>Producto</p>
+                <img src="https://i.blogs.es/f3592e/650_1200-20/450_1000.jpg" alt="Carro">
+                <div class="precios">
+                    <div class="precios-antes">
+                        <p>Antes</p>
+                        <p id="PrecioInicial">$0000</p>
+                    </div>
+                    <div class="precios-ahora">
+                        <p>Ahora</p>
+                        <p id="precioFinal">$0000</p>
+                    </div>
+                </div>
+
+                <p id="venta"></p>
+            </div>
+        </div>
+    </section>
+
+  
+    <script src="./descuentos.js"></script>
+</body>
+
+</html>
